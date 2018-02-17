@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marg_24">24dp</dimen>
+    <dimen name="marg_8">8dp</dimen>
+    <dimen name="padd_16">16dp</dimen>
+    <dimen name="txtSize_16">16sp</dimen>
+</resources>

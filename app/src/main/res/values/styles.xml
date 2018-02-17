@@ -1,11 +1,23 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--<style name="button">-->
+        <!--<item name="layout_width">match_parent</item>-->
+        <!--<item name="layout_height">wrap_content</item>-->
+        <!--<item name="layout_marginBottom">@dimen/marg_8</item>-->
+        <!--<item name="layout_marginLeft">@dimen/marg_24</item>-->
+        <!--<item name="layout_marginRight">@dimen/marg_24</item>-->
+    <!--</style>-->
+
 </resources>
+
+<!--<style>-->
+<!--<item name=""></item>-->
+    <!--</style>-->

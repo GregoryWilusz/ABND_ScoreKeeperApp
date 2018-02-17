@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">ScoreKeeperApp</string>
+    <string name="app_name">Mini Java Football League</string>
+    <string name="img_description">Football pitch background</string>
+    <string name="team_a_name">The soccers</string>
+    <string name="team_b_name">The goalers</string>
+    <string name="fouls">Fouls: </string>
+    <string name="foul_team_a">0</string>
+    <string name="foul_team_b">0</string>
+    <string name="team_score">0</string>
+    <string name="goal">Goal</string>
+    <string name="foul">Foul</string>
+    <string name="yellow_card">Yellow Card</string>
+    <string name="red_card">Red Card</string>
+    <string name="btn_reset">Start new game</string>
 </resources>
