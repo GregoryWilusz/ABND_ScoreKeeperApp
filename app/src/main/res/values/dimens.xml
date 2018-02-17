@@ -4,4 +4,5 @@
     <dimen name="marg_8">8dp</dimen>
     <dimen name="padd_16">16dp</dimen>
     <dimen name="txtSize_16">16sp</dimen>
+    <dimen name="teamName">26sp</dimen>
 </resources>

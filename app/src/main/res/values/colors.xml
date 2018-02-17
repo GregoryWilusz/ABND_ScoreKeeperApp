@@ -2,7 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorTextPrimary">#fff</color>
-    <color name="colorPrimaryDark">#4c841d</color>
+    <color name="colorPrimaryDark">#417e0d</color>
     <color name="colorAccent">#FF4081</color>
     <color name="fontColor">#FFF</color>
+    <color name="yellowCard">#ccae00</color>
+    <color name="redCard">#ce0909</color>
+    <color name="resetGameColor">#c67b04</color>
+
 </resources>

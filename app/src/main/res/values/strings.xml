@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Mini Java Football League</string>
+    <string name="app_name">Score Keeper App</string>
     <string name="img_description">Football pitch background</string>
-    <string name="team_a_name">The soccers</string>
-    <string name="team_b_name">The goalers</string>
+    <string name="team_a_name">The Kickers</string>
+    <string name="team_b_name">The Goalers</string>
     <string name="fouls">Fouls: </string>
     <string name="foul_team_a">0</string>
     <string name="foul_team_b">0</string>

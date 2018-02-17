@@ -6,9 +6,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/img_description"
         android:scaleType="centerCrop"
-        android:src="@drawable/background"
-        android:contentDescription="@string/img_description" />
+        android:src="@drawable/background" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -25,21 +25,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Column">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:padding="@dimen/padd_16"
-                        android:text="@string/team_a_name"
-                        android:textColor="@color/fontColor"
-                        android:textSize="24sp" />
+                        style="@style/TeamName"
+                        android:text="@string/team_a_name" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -117,65 +107,35 @@
                     </LinearLayout>
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
+                        style="@style/Button.Game.Goal"
                         android:onClick="addGoalTeamA"
                         android:text="@string/goal" />
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
+                        style="@style/Button.Game"
                         android:onClick="addFoul"
                         android:text="@string/foul" />
 
                     <Button
                         android:id="@+id/yellow_card_button_team_a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/yellow_card"
-                        android:onClick="addCardForTeamA" />
+                        style="@style/Button.Game.YellowCard"
+                        android:onClick="addCardForTeamA"
+                        android:text="@string/yellow_card" />
 
                     <Button
                         android:id="@+id/red_card_button_team_a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/red_card"
-                        android:onClick="addCardForTeamA" />
+                        style="@style/Button.Game.RedCard"
+                        android:onClick="addCardForTeamA"
+                        android:text="@string/red_card" />
                 </LinearLayout>
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:background="@android:color/darker_gray" />
+                <View style="@style/Separator" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Column">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:padding="@dimen/padd_16"
-                        android:text="@string/team_b_name"
-                        android:textColor="@color/fontColor"
-                        android:textSize="24sp" />
+                        style="@style/TeamName"
+                        android:text="@string/team_b_name" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -254,42 +214,26 @@
 
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
+                        style="@style/Button.Game.Goal"
                         android:onClick="addGoalTeamB"
                         android:text="@string/goal" />
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
+                        style="@style/Button.Game"
                         android:onClick="addFoulTeamB"
                         android:text="@string/foul" />
 
                     <Button
                         android:id="@+id/yellow_card_button_team_b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/yellow_card"
-                        android:onClick="addCardForTeamB" />
+                        style="@style/Button.Game.YellowCard"
+                        android:onClick="addCardForTeamB"
+                        android:text="@string/yellow_card" />
 
                     <Button
                         android:id="@+id/red_card_button_team_b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/marg_8"
-                        android:layout_marginLeft="@dimen/marg_24"
-                        android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/red_card"
-                        android:onClick="addCardForTeamB" />
+                        style="@style/Button.Game.RedCard"
+                        android:onClick="addCardForTeamB"
+                        android:text="@string/red_card" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -301,8 +245,7 @@
                 android:layout_marginTop="42dp">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/Button.Game.Reset"
                     android:onClick="resetGame"
                     android:text="@string/btn_reset" />
 
