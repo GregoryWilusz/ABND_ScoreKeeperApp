@@ -18,7 +18,7 @@
     </style>
 
     <style name="Column">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/columnWidth</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
@@ -26,7 +26,7 @@
     </style>
 
     <style name="Separator">
-        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_width">@dimen/separator</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_marginTop">@dimen/padd_16</item>
         <item name="android:background">@color/resetGameColor</item>
@@ -42,22 +42,42 @@
     </style>
 
     <style name="Button.Game.Goal" parent="Button.Game">
-        <item name="android:background">@color/colorPrimaryDark</item>>
+        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
 
     <style name="Button.Game.YellowCard" parent="Button.Game">
-        <item name="android:background">@color/yellowCard</item>>
+        <item name="android:background">@color/yellowCard</item>
     </style>
 
     <style name="Button.Game.RedCard" parent="Button.Game">
-        <item name="android:background">@color/redCard</item>>
+        <item name="android:background">@color/redCard</item>
     </style>
 
     <style name="Button.Game.Reset" parent="Button.Game">
-        <item name="android:background">@color/resetGameColor</item>>
+        <item name="android:background">@color/resetGameColor</item>
         <item name="android:padding">@dimen/padd_16</item>
     </style>
 
+    <style name="ResetArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/resetAreaMarginTop</item>
+    </style>
+
+    <style name="GoalString">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/team_score</item>
+        <item name="android:textColor">@color/yellowCard</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+    </style>
+
+    <style name="IconStyle">
+        <item name="android:contentDescription">Card icon</item>
+        <item name="android:layout_width">@dimen/iconDimen</item>
+        <item name="android:layout_height">@dimen/iconDimen</item>
+    </style>
 
 </resources>
 

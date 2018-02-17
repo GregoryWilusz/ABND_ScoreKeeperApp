@@ -62,8 +62,7 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            style="@style/IconStyle"
                             android:src="@drawable/yellowcard" />
 
                         <TextView
@@ -76,8 +75,7 @@
                             android:textSize="@dimen/txtSize_16" />
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            style="@style/IconStyle"
                             android:src="@drawable/redcard" />
 
                         <TextView
@@ -99,11 +97,8 @@
 
                         <TextView
                             android:id="@+id/team_a_goal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/team_score"
-                            android:textColor="@color/fontColor"
-                            android:textSize="56sp" />
+                            style="@style/GoalString"/>
+
                     </LinearLayout>
 
                     <Button
@@ -168,8 +163,7 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            style="@style/IconStyle"
                             android:src="@drawable/yellowcard" />
 
                         <TextView
@@ -182,8 +176,7 @@
                             android:textSize="@dimen/txtSize_16" />
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            style="@style/IconStyle"
                             android:src="@drawable/redcard" />
 
                         <TextView
@@ -205,11 +198,7 @@
 
                         <TextView
                             android:id="@+id/team_b_goal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/team_score"
-                            android:textColor="@color/fontColor"
-                            android:textSize="56sp" />
+                            style="@style/GoalString"/>
                     </LinearLayout>
 
 
@@ -239,10 +228,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="42dp">
+                style="@style/ResetArea">
 
                 <Button
                     style="@style/Button.Game.Reset"
