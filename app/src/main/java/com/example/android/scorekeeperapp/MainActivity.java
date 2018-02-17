@@ -39,6 +39,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Displays number of yellow card for Team A.
+     */
+    public void displayYellowCardTeamA(int card) {
+        TextView cardView = (TextView) findViewById(R.id.yellow_card_counter_team_a);
+        cardView.setText(String.valueOf(card));
+    }
+
+    /**
+     * Displays number of red card for Team A.
+     */
+    public void displayRedCardTeamA(int card) {
+        TextView cardView = (TextView) findViewById(R.id.red_card_counter_team_a);
+        cardView.setText(String.valueOf(card));
+    }
+
+    /**
      * Adds a goal for Team A.
      */
     public void addGoalTeamA(View view) {
@@ -57,11 +73,14 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds yellow/red card for Team A.
      */
-    public void addCardTeamA(View view) {
-        goalTeamA += 0;
-        displayScoreTeamA(goalTeamA);
-        foulTeamA += 1;
-        displayFoulTeamA(foulTeamA);
+    public void addCardForTeamA(View view) {
+        if (view == findViewById(R.id.yellow_card_button_team_a)) {
+            yellowCardTeamA += 1;
+            displayYellowCardTeamA(yellowCardTeamA);
+        } else {
+            redCardTeamA += 1;
+            displayRedCardTeamA(redCardTeamA);
+        }
     }
 
     /**
@@ -78,6 +97,22 @@ public class MainActivity extends AppCompatActivity {
     public void displayFoulTeamB(int foul) {
         TextView foulView = (TextView) findViewById(R.id.team_b_foul);
         foulView.setText(String.valueOf(foul));
+    }
+
+    /**
+     * Displays number of yellow card for Team B.
+     */
+    public void displayYellowCardTeamB(int card) {
+        TextView cardView = (TextView) findViewById(R.id.yellow_card_counter_team_b);
+        cardView.setText(String.valueOf(card));
+    }
+
+    /**
+     * Displays number of red card for Team B.
+     */
+    public void displayRedCardTeamB(int card) {
+        TextView cardView = (TextView) findViewById(R.id.red_card_counter_team_b);
+        cardView.setText(String.valueOf(card));
     }
 
     /**
@@ -99,24 +134,35 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds yellow/red card for Team B.
      */
-    public void AddCardForTeamB(View view) {
-        goalTeamB += 0;
-        displayScoreTeamB(goalTeamB);
-        foulTeamB += 1;
-        displayFoulTeamB(foulTeamB);
+    public void addCardForTeamB(View view) {
+        if (view == findViewById(R.id.yellow_card_button_team_b)) {
+            yellowCardTeamB += 1;
+            displayYellowCardTeamB(yellowCardTeamB);
+        } else {
+            redCardTeamB += 1;
+            displayRedCardTeamB(redCardTeamB);
+        }
     }
 
     /**
      * Sets score and number of games to 0 for both teams.
      */
-    public void resetScore(View view) {
+    public void resetGame(View view) {
         goalTeamA = 0;
         foulTeamA = 0;
+        yellowCardTeamA = 0;
+        redCardTeamA = 0;
         displayScoreTeamA(goalTeamA);
         displayFoulTeamA(foulTeamA);
+        displayYellowCardTeamA(yellowCardTeamA);
+        displayRedCardTeamA(redCardTeamA);
         goalTeamB = 0;
         foulTeamB = 0;
+        yellowCardTeamB = 0;
+        redCardTeamB = 0;
         displayScoreTeamB(goalTeamB);
         displayFoulTeamB(foulTeamB);
+        displayYellowCardTeamB(yellowCardTeamB);
+        displayRedCardTeamB(redCardTeamB);
     }
 }

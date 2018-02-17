@@ -135,21 +135,24 @@
                         android:text="@string/foul" />
 
                     <Button
+                        android:id="@+id/yellow_card_button_team_a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/marg_8"
                         android:layout_marginLeft="@dimen/marg_24"
                         android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/yellow_card" />
+                        android:text="@string/yellow_card"
+                        android:onClick="addCardForTeamA" />
 
                     <Button
+                        android:id="@+id/red_card_button_team_a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/marg_8"
                         android:layout_marginLeft="@dimen/marg_24"
                         android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/red_card" />
-                    <!--android:onClick="addCardTeamA"-->
+                        android:text="@string/red_card"
+                        android:onClick="addCardForTeamA" />
                 </LinearLayout>
 
                 <View
@@ -269,21 +272,24 @@
                         android:text="@string/foul" />
 
                     <Button
+                        android:id="@+id/yellow_card_button_team_b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/marg_8"
                         android:layout_marginLeft="@dimen/marg_24"
                         android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/yellow_card" />
+                        android:text="@string/yellow_card"
+                        android:onClick="addCardForTeamB" />
 
                     <Button
+                        android:id="@+id/red_card_button_team_b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/marg_8"
                         android:layout_marginLeft="@dimen/marg_24"
                         android:layout_marginRight="@dimen/marg_24"
-                        android:text="@string/red_card" />
-                    <!--android:onClick="AddCardForTeamB"-->
+                        android:text="@string/red_card"
+                        android:onClick="addCardForTeamB" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -297,7 +303,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="resetScore"
+                    android:onClick="resetGame"
                     android:text="@string/btn_reset" />
 
             </LinearLayout>
