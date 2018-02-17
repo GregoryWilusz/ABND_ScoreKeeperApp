@@ -4,11 +4,10 @@
     <string name="team_a_name">The Kickers</string>
     <string name="team_b_name">The Goalers</string>
     <string name="fouls">Fouls: </string>
-    <string name="foul_team_a">0</string>
-    <string name="foul_team_b">0</string>
+    <string name="fouls_counter">0</string>
+    <string name="foul">Foul</string>
     <string name="team_score">0</string>
     <string name="goal">Goal</string>
-    <string name="foul">Foul</string>
     <string name="yellow_card">Yellow Card</string>
     <string name="red_card">Red Card</string>
     <string name="btn_reset">Start new game</string>

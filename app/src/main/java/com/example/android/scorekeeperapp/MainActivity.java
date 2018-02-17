@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays number of games played for Team B.
      */
     public void displayFoulTeamB(int foul) {
-        TextView foulView = (TextView) findViewById(R.id.team_b_foul);
+        TextView foulView = (TextView) findViewById(R.id.team_b_foulCounter);
         foulView.setText(String.valueOf(foul));
     }
 

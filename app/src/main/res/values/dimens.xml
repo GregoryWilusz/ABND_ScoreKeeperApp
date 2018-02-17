@@ -10,4 +10,5 @@
     <dimen name="resetAreaMarginTop">42dp</dimen>
     <dimen name="scoreTextSize">58sp</dimen>
     <dimen name="iconDimen">40dp</dimen>
+    <dimen name="cardsCounterContainerPadding">5dp</dimen>
 </resources>

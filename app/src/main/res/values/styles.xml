@@ -29,7 +29,7 @@
         <item name="android:layout_width">@dimen/separator</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_marginTop">@dimen/padd_16</item>
-        <item name="android:background">@color/resetGameColor</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="Button.Game" parent="Widget.AppCompat.Button.Colored">
@@ -69,7 +69,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/team_score</item>
-        <item name="android:textColor">@color/yellowCard</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/scoreTextSize</item>
     </style>
 
@@ -77,6 +77,25 @@
         <item name="android:contentDescription">Card icon</item>
         <item name="android:layout_width">@dimen/iconDimen</item>
         <item name="android:layout_height">@dimen/iconDimen</item>
+    </style>
+
+    <style name="Counter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/cardsCounterContainerPadding</item>
+        <item name="android:text">@string/fouls_counter</item>
+        <item name="android:textColor">@color/fontColor</item>
+        <item name="android:textSize">@dimen/teamName</item>
+    </style>
+
+    <style name="Counter.CardsCounter.Yellow" parent="Counter">
+        <item name="android:layout_marginRight">@dimen/marg_24</item>
+        <item name="android:textColor">@color/yellowCard</item>
+    </style>
+
+    <style name="Counter.CardsCounter.Red" parent="Counter">
+        <item name="android:layout_marginRight">@dimen/marg_24</item>
+        <item name="android:textColor">@color/redCard</item>
     </style>
 
 </resources>

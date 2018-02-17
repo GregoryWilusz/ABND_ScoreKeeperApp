@@ -37,7 +37,6 @@
                         android:gravity="center_horizontal">
 
                         <TextView
-                            android:id="@+id/gamesA"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/fouls"
@@ -46,12 +45,7 @@
 
                         <TextView
                             android:id="@+id/team_a_foul"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
-                            android:text="@string/foul_team_a"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            style="@style/Counter" />
 
                     </LinearLayout>
 
@@ -67,12 +61,7 @@
 
                         <TextView
                             android:id="@+id/yellow_card_counter_team_a"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="12dp"
-                            android:text="@string/foul_team_a"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            style="@style/Counter.CardsCounter.Yellow" />
 
                         <ImageView
                             style="@style/IconStyle"
@@ -80,12 +69,7 @@
 
                         <TextView
                             android:id="@+id/red_card_counter_team_a"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="12dp"
-                            android:text="@string/foul_team_a"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            style="@style/Counter.CardsCounter.Red" />
 
                     </LinearLayout>
 
@@ -138,7 +122,6 @@
                         android:gravity="center_horizontal">
 
                         <TextView
-                            android:id="@+id/gamesB"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/fouls"
@@ -146,13 +129,8 @@
                             android:textSize="@dimen/txtSize_16" />
 
                         <TextView
-                            android:id="@+id/team_b_foul"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
-                            android:text="@string/foul_team_b"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            android:id="@+id/team_b_foulCounter"
+                            style="@style/Counter" />
 
                     </LinearLayout>
 
@@ -168,12 +146,7 @@
 
                         <TextView
                             android:id="@+id/yellow_card_counter_team_b"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="12dp"
-                            android:text="@string/foul_team_a"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            style="@style/Counter.CardsCounter.Yellow" />
 
                         <ImageView
                             style="@style/IconStyle"
@@ -181,12 +154,7 @@
 
                         <TextView
                             android:id="@+id/red_card_counter_team_b"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="12dp"
-                            android:text="@string/foul_team_a"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                            style="@style/Counter.CardsCounter.Red" />
 
                     </LinearLayout>
 
