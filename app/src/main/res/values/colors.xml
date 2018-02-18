@@ -8,4 +8,5 @@
     <color name="yellowCard">#ccae00</color>
     <color name="redCard">#ce0909</color>
     <color name="resetGameColor">#c67b04</color>
+    <color name="backgroundColor">#aa000000</color>
 </resources>

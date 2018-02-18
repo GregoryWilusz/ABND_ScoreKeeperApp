@@ -36,15 +36,10 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/fouls"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                        <TextView style="@style/Fouls" />
 
                         <TextView
-                            android:id="@+id/team_a_foul"
+                            android:id="@+id/team_a_foulCounter"
                             style="@style/Counter" />
 
                     </LinearLayout>
@@ -81,7 +76,7 @@
 
                         <TextView
                             android:id="@+id/team_a_goal"
-                            style="@style/GoalString"/>
+                            style="@style/GoalString" />
 
                     </LinearLayout>
 
@@ -121,12 +116,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/fouls"
-                            android:textColor="@color/fontColor"
-                            android:textSize="@dimen/txtSize_16" />
+                        <TextView style="@style/Fouls" />
 
                         <TextView
                             android:id="@+id/team_b_foulCounter"
@@ -166,7 +156,7 @@
 
                         <TextView
                             android:id="@+id/team_b_goal"
-                            style="@style/GoalString"/>
+                            style="@style/GoalString" />
                     </LinearLayout>
 
 
@@ -195,8 +185,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/ResetArea">
+            <LinearLayout style="@style/ResetArea">
 
                 <Button
                     style="@style/Button.Game.Reset"

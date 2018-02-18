@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays number of fouls for Team A.
      */
     public void displayFoulTeamA(int foul) {
-        TextView foulView = (TextView) findViewById(R.id.team_a_foul);
+        TextView foulView = (TextView) findViewById(R.id.team_a_foulCounter);
         foulView.setText(String.valueOf(foul));
     }
 
